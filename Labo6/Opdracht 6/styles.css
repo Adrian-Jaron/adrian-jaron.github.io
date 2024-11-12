@@ -1,0 +1,38 @@
+body{
+    font-family: Verdana;
+    font-size: 1.1em;
+    background-color: silver;
+    color: darkblue;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: red;
+    font-variant: small-caps;
+}
+
+a:hover{
+    border: 2px solid yellow;
+}
+
+.stippeltjesrand{
+    border: solid 1px black;
+    border-style: dotted;
+}
+
+
+
+img{
+    width: 2.5%;
+    height: 2.5%;
+}
+
+.checklist li.checked{
+    list-style-image: url(../images/check.svg);
+
+}
+
+.checklist li{
+    list-style-image: url(../images/uncheck.svg);
+}
