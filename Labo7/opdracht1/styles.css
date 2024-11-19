@@ -1,0 +1,53 @@
+body>section>header {
+    background-image: url('header.jpg');
+    background-repeat: no-repeat;
+    height: 100px;
+    background-size: cover;
+}
+
+body>section>header>h1{
+    color:white;
+    font-size: 3em;
+    font-family: Arial, sans-serif;
+}
+
+body>section>nav>a{
+    color: mediumspringgreen;
+    text-decoration: none;
+
+}
+
+article h1{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: #515050;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+}
+
+body>section>nav{
+    background-color: #454545;
+    padding: 5px;
+}
+
+nav a{
+    font-weight: bold;
+}
+
+article{
+    margin: 5px;
+    padding: 5px;
+    background-color: #eeeeee;
+}
+
+
+
+body{
+    width: 95%;
+    margin: auto;
+}
+
+article{
+
+}
