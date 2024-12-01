@@ -18,6 +18,9 @@ header{
     color:  #444444;
     background-color: #a7cece;
     border: dotted 2px white;
+    background-image: url("images/background.gif");
+    background-repeat: no-repeat;
+    padding-left: 70px;
 }
 
 h1{
