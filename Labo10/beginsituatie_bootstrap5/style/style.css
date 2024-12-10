@@ -1,0 +1,21 @@
+.row > div:first-child{
+    background-color: lightgray;
+}
+
+.row > div:nth-child(2){
+    background-color: darkgray;
+      }
+.row > div:last-child{
+    background-color: lightgray;
+}
+
+
+.row{
+    gap: 20px;
+}
+
+.container-fluid{
+margin: auto;
+justify-content: center;
+}
+

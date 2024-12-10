@@ -1,0 +1,137 @@
+
+body {
+    background-color: black;
+    color: white;
+}
+
+li {
+    margin: auto;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+p{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 100px;
+    color: #48c4d8
+}
+
+img {
+    border-radius: 100%;
+    width: 400px;
+    height: 380px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+a{
+    color: #3affc3;
+
+
+
+}
+
+.likes{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    margin: auto;
+    gap: 50px;
+}
+
+.likes a{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+
+
+
+table, td, th{
+    border: 1px solid white;
+
+}
+
+#table-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+table {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border: 10px solid #991821;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+table td, table th {
+    padding: 20px 11px;
+}
+
+table thead th {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #991821), color-stop(1, #80141C) );
+    background: -moz-linear-gradient( center top, #991821 5%, #80141C 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#991821', endColorstr='#80141C');
+    background-color: #991821;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 1px solid #B01C26;
+}
+
+table thead th:first-child {
+    border: none;
+}
+
+table tbody td {
+    color: #80141C;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+table tbody .alt td {
+    background: #F7CDCD;
+    color: #80141C;
+}
+
+table tbody td:first-child {
+    border-left: none;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+
