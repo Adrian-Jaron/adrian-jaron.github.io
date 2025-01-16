@@ -1,0 +1,94 @@
+
+.caption {
+    font-family: helvetica;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+
+.gridHeader {
+    background-color: #dcd6fe;
+}
+
+.gridNav {
+    background-color: #c6c0ff;
+}
+
+.gridMain {
+    background-color: #f9f6d2;
+}
+
+.gridAside {
+    background-color: #d4ffd1;
+}
+
+.gridFooter {
+    background-color: #ffd1d1;
+}
+
+@media only screen and (max-width: 786px) {
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
+        height: 100vh;
+
+    }
+
+    .grid p, .grid h1, .grid span{
+        text-align: center;
+        display: block;
+        margin-top: 40px;
+
+
+    }
+
+    .gridNav{
+        grid-row: 2;
+    }
+
+}
+
+@media only screen and (min-width: 786px) {
+
+    .grid{
+        display: grid;
+        grid-template-columns: 5% 10% auto 10% 5%;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .gridHeader{
+        grid-column: 1/6;
+        padding: 30px;
+    }
+
+    .gridNav{
+      grid-column: 2/3;
+        grid-row: 2/3;
+        padding: 30px;
+
+    }
+
+    .gridAside{
+     grid-column: 4/5;
+        grid-row: 2/3;
+        padding: 30px;
+    }
+
+    .gridMain{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .gridFooter{
+       grid-column: 1/6;
+        padding: 30px;
+    }
+
+
+}

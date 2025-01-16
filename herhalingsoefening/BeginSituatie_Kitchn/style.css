@@ -1,0 +1,274 @@
+/** Volgende CSS gaan we ze geven **/
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body{
+    font-family: helvetica sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    border-bottom: 1px solid black;
+    color: black;
+    padding: 1em 0;
+}
+
+h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+header {
+    border-bottom: 1px solid #ebe8e8;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width:769px){
+    header{
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 770px){
+    header{
+        width: 750px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    header{
+        width: 980px;
+    }
+}
+
+nav ul{
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    margin: 0;
+
+}
+
+nav li{
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+nav a{
+    display: block;
+    border-right: 1px solid #ebe8e8;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5b4746;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+
+nav li:last-child a{
+    border-right: none;
+}
+
+nav{
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+nav a:hover{
+    border-bottom: 2px solid #fff100;
+}
+
+@media only screen and (min-width: 770px){
+    nav{
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 770px){
+    nav{
+        width: 750px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    nav{
+        width: 980px;
+    }
+}
+
+main{
+    border-top: 2px #fff100;
+}
+
+.container{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#main-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("images/headerimage.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+#main-header span{
+    color:white;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (min-width: 800px){
+    #main-header span{
+      font-size: 5em;
+    }
+}
+
+#recipes-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+}
+
+#recipes-container h1{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 769px){
+    #recipes-container{
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 770px){
+    #recipes-container{
+        width: 750px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    #recipes-container{
+        width: 980px;
+    }
+}
+
+
+
+.recipe{
+    border-top: 1px solid #ddd;
+    margin-right: 1.5em;
+    padding-top: 1em;
+}
+
+.recipe-title1{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ff4d56;
+    text-decoration: none;
+}
+
+.recipe-title2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.body{
+    color: #666;
+    line-height: 2;
+}
+
+.author{
+    padding-right: 10px;
+    border-right: 1px solid #ebe8e8;
+    font-style: italic;
+    display: inline-block;
+}
+
+.timestamp{
+    color: #666;
+    padding-left: 10px;
+    display: inline-block;
+
+}
+
+#recommend-container{
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+.row{
+    margin: 0;
+}
+
+@media only screen and (max-width: 769px){
+    #recommend-container{
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 770px){
+    #recommend-container{
+        width: 750px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    #recommend-container{
+        width: 980px;
+    }
+}
+
+
+#left{
+    float: left;
+    text-align: right;
+    width: 50%;
+    padding-right: 10px;
+}
+
+#right{
+    float: right;
+    text-align: left;
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+}
+
+#footer-container{
+    width: 100%;
+    border-top: 1px #ebe8e8;
+    padding-top: 20px;
+    overflow:hidden;
+}
+
