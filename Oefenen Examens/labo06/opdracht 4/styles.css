@@ -1,0 +1,33 @@
+body{
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    background-color: silver;
+    color: darkblue;
+}
+
+h1{
+    font-variant: small-caps;
+    background-color: red;
+}
+
+a:hover{
+    border: 2px dotted yellowgreen;
+}
+
+a{
+    background-image: url("136446.png");
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-size: 20px;
+    padding-left: 30px;
+}
+
+.checklist li:before{
+    content: "\2610";
+}
+
+.checklist li.checked::before{
+    content: "\2611";
+}
+
+

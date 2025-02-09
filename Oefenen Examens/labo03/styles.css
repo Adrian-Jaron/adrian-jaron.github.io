@@ -1,0 +1,26 @@
+table td{
+
+    border: 1px solid black;
+
+
+}
+table tr{
+    border: 1px solid black;
+
+}
+
+table{
+    border-collapse: collapse;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+ol{
+    list-style-type: decimal;
+}
+
+#ul-element1{
+    list-style-type: none;
+}

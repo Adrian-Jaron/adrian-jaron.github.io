@@ -1,0 +1,27 @@
+.col-md-3:nth-child(2)
+{
+    background-color: darkgray;
+}
+
+.col-md-3:nth-child(odd){
+    background-color: lightgray;
+}
+
+.row{
+    gap: 10px;
+}
+
+.col-md-2{
+    background-color: lightgray;
+}
+
+.col-md-7{
+    background-color: darkgray;
+}
+
+.col-md-1{
+    background-color: lightgray;
+}
+.col-md-6{
+    background-color: darkgray;
+}

@@ -1,0 +1,38 @@
+table{
+    border: 2px solid black;
+}
+
+#month{
+    text-align: center;
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+body table .days td{
+    border: 2px dotted yellow;
+    background-color: purple;
+}
+
+tbody td:last-child{
+    background-color: pink;
+}
+
+tbody td:first-child{
+    background-color: pink;
+}
+
+#vorigemaand{
+    background-color: gray;
+}
+
+.volgendemaand{
+    background-color: gray;
+}
+
+tbody td.volgendemaand:first-child,
+td.volgendemaand:last-child{
+    background-color: gray;
+}
+
+#vrijedag{
+    background-color: black;
+}

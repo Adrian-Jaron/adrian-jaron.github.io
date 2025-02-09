@@ -1,0 +1,28 @@
+.col-2{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.col-8{
+    background-color: red;
+}
+
+.row:nth-child(3) .col-2 {
+    background-color: blue;
+}
+
+.col-7{
+    background-color: darkgray;
+}
+
+.col-1{
+    background-color: purple;
+}
+
+.col-2{
+    background-color: lightgray;
+}
+
+#g{
+    background-color: brown;
+}

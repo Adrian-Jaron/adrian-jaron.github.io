@@ -1,0 +1,25 @@
+.col-12{
+    background-color: red;
+}
+
+.col-md-6{
+    background-color: blue;
+
+}
+
+.col-lg-3{
+     background-color: lightgray;
+}
+
+.col-9{
+    background-color: red;
+}
+
+.col-md-3{
+    background-color: lightgray;
+    margin: 10px;
+}
+
+.col-lg-1{
+    background-color: blue;
+}

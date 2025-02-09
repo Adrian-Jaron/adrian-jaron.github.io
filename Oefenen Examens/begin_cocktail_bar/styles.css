@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:  Verdana, helvetica, arial, sans-serif;
+    font-size: 1.2em;
+}
+
+h1, h2{
+    color: #007e7e;
+}
+
+h1{
+    font-size: 150%;
+}
+
+h2{
+    font-size: 130%;
+}
+
+footer{
+    font-size: 0.5em;
+    clear: both;
+    text-align: center;
+    line-height: normal;
+}
+
+#wrapper{
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;  /* Voeg deze toe om floats goed te omarmen */
+}
+
+#specials-article{
+    float: right;
+    width: 30%;
+    padding-left: 10px;
+    border: 2px solid cornflowerblue;
+    box-sizing: border-box;
+}
+
+#specials-article h2{
+    text-align: center;
+}
+
+#specials-article img{
+    margin: auto;
+    display: block;
+}
+
+#specials-article h1{
+    text-align: center;
+    padding: 2%;
+    box-sizing: border-box;
+    background: url("images/cocktail.gif") repeat-x;
+    color: black;
+    line-height: 2;
+}
+
+#specials-article h2:nth-of-type(1){
+    color: yellow;
+}
+#specials-article h2:nth-of-type(2){
+    color: brown;
+}
+#specials-article h2:nth-of-type(3){
+    color: black;
+}
+
+#specials-article a:hover {
+    color: brown;
+}
+
+#content{
+    float: left;
+    width: 70%;
+    padding-right: 8px;
+    box-sizing: border-box;
+}
+
+#guarantee{
+    margin: 30px;
+    padding: 20px;
+    color: #444444;
+    background-color: #a7cece;
+    border: 2px dotted white;
+    font-style: italic;
+    line-height: 1.9em;
+    background: #a7cece url(images/background.gif) no-repeat top left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#bar-name{
+    font-style: italic;
+}
+
+#bar-owner{
+    font-weight: bold;
+}
