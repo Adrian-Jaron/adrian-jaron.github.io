@@ -1,0 +1,16 @@
+/* Je CSS zou zoiets moeten bevatten */
+.listItemStyleNone {
+    list-style-type: none;
+}
+
+.colorRed {
+    background-color: red;
+}
+
+.listItemStyleDisc {
+    list-style-type: disc;
+}
+
+.colorWhite {
+    color: white;
+}
