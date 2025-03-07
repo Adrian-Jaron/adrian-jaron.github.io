@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="firstName">First Name:*</label>
+            <input required type="text" id="firstName" name="firstName">
+</br>
+            <label for="lastName">Last Name:*</label>
+            <input required type="text" id="lastName" name="lastName">
+        </fieldset>
+        <fieldset>
+            <legend>Sports</legend>
+            <p>Which sports do you train?</p>
+            <input type="checkbox"> Running
+            </br>
+            <input type="checkbox"> Swimming
+            </br>
+            <input type="checkbox"> Rowing
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>Which sports do you train?</p>
+            <input class="check" type="radio" > Male
+            </br>
+            <input class="check" type="radio" > Female
+            </br>
+            <input class="check" type="radio"  > Other / prefer not to say
+        </fieldset>
+        <fieldset>
+            <legend>Favorites</legend>
+            <label>Favorite movie: <input type="text"></label>
+            </br>
+            <label>Favorite quote: <input placeholder="write your favourite quote" type="text"></label>
+            </br>
+            <label for="food">Favourite food:</label>
+            <select id="food" name="food">
+                <option value="apple">Hamburger</option>
+                <option value="banana">Hot Dog</option>
+                <option value="orange">Pizza</option>
+            </select>
+            </br>
+            <label>Choose a flavor:<input></label>
+        </fieldset>
+        <fieldset>
+            <legend>Security&Contact</legend>
+            <label>Password:*<input required type="text"></label>
+            </br>
+            <label>Email address <input placeholder="Enter your email address" type="text"></label>
+            </br>
+            <label>Favourite Site:<input placeholder="Enter the URL" type="url"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label>Favourite number (1-10)<input type="text"></label>
+            </br>
+            <label>Favourite number (11-1000)<input type="range"></label>
+            </br>
+            <label>When were you born?<input  type="date"></label>
+            </br>
+            <label>Belgium zip-code reg number*: <input required placeholder="9999" type="text" pattern="\d{4}" maxlength="4" minlength="4"></label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Miscellaneous</legend>
+            <label>Search for something: <input type="text"></label>
+            </br>
+            <label>What is ur favourite color? <input type="color"></label>
+            </br>
+            <label>Upload a file: <input type="file"></label>
+        </fieldset>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
