@@ -49,11 +49,11 @@ const withoutBullets = () => {
         //listItems[i].style.listStyleType = "none";
         //listItems[i].style.backgroundColor = "red";
         //2e manier
-        //listItems[i].className = "listItemStyleNone colorRed";
+        listItems[i].className = "colorBlue listItemStyleNone2";
         //3e manier
-        listItems[i].classList.remove("listItemStyleDisc");
-        listItems[i].classList.add("colorRed");
-        listItems[i].classList.add("listItemStyleNone");
+        //listItems[i].classList.remove("listItemStyleDisc");
+        //listItems[i].classList.add("colorRed");
+        //listItems[i].classList.add("listItemStyleNone");
     }
 }
 

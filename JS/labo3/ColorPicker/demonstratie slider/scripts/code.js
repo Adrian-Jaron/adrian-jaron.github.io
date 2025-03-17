@@ -7,6 +7,8 @@ const setup = () => {
 		sliders[i].addEventListener("input", update);
 	}
 
+
+
 	update();
 	//alternatieve manier is met een for loop waar je met index add event listeners instelt!
 }

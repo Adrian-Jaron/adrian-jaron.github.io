@@ -7,6 +7,14 @@
     background-color: red;
 }
 
+.listItemStyleNone2{
+    list-style-type: none;
+}
+
+.colorBlue {
+    background-color: blue;
+}
+
 .listItemStyleDisc {
     list-style-type: disc;
 }
