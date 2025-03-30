@@ -1,0 +1,16 @@
+img{
+    width: 200px;
+    height: 200px;
+}
+
+#playField{
+    background-color: lightgray;
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0px;
+    width: fit-content;
+}
+
+
+
