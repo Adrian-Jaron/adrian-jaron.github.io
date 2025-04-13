@@ -1,6 +1,8 @@
 const setup = () => {
     let start = new Date('2025-04-01T12:10:30')
+    let event = new Date();
     console.log(start);
+
 
     console.log((start.getDay()));
 
@@ -9,6 +11,10 @@ const setup = () => {
         + start.getFullYear() + " " + start.getHours()
         + ":" + start.getMinutes() + ":" + start.getSeconds());
 
-    con
+    console.log("toISOString " + event.toISOString());
+
+    console.log("toDateString " + event.toDateString());
+
+    console.log("toString" + event.toString());
 }
 
