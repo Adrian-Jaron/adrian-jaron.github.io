@@ -1,0 +1,14 @@
+
+#tafels-tabel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 20px;
+    width: 100%;
+    justify-items: center;
+}
+
+
+th{
+    background-color: black;
+    color: white;
+}
