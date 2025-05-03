@@ -21,35 +21,37 @@ const zoekOpdrachtUitvoeren2 = (zoekOpdracht) => {
     let url = "";
     let arrayPrefixen = ["/g", "/y", "/i", "/x"];
 
-    for (let i = 0; i < arrayPrefixen.length; i++) {
-        if(prefix === arrayPrefixen[i]) {
-            if (prefix === arrayPrefixen[0]) {
-                url = `https://www.google.com/search?q=${encodeURIComponent(afrix)}`;
-                maakHistoriek("google", afrix, url);
-            } else if (prefix === arrayPrefixen[1]) {
-                url = `https://www.youtube.com/search?q=${encodeURIComponent(afrix)}`;
-                maakHistoriek("youtube", afrix, url);
-            } else if (prefix === arrayPrefixen[2]) {
-                url = `https://www.instagram.com/search?q=${encodeURIComponent(afrix)}`;
-                maakHistoriek("instagram", afrix, url);
-            } else if (prefix === arrayPrefixen[3]) {
-                url = `https://www.x.com/search?q=${encodeURIComponent(afrix)}`;
-                maakHistoriek("x", afrix, url);
-            }
-            break;
-        }
-    }
-    if(!arrayPrefixen.includes(prefix) && zoekOpdracht.substring(0,1) === "/" ) {
-        alert("prefix is niet correct!");
+
+    if (zoekOpdracht.substring(0, 1) !== "/") {
+        alert("Invalid command. Commands must start with '/'.");
+        return;
     }
 
-    if(zoekOpdracht.substring(0,1) !== "/"){
-        alert("invalid command");
+    if (!arrayPrefixen.includes(prefix)) {
+        alert("Prefix is niet correct!");
+        return;
+    }
+
+    // Determine URL based on prefix
+    if (prefix === "/g") {
+        url = `https://www.google.com/search?q=${encodeURIComponent(afrix)}`;
+        maakHistoriek("google", afrix, url);
+    } else if (prefix === "/y") {
+        url = `https://www.youtube.com/search?q=${encodeURIComponent(afrix)}`;
+        maakHistoriek("youtube", afrix, url);
+    } else if (prefix === "/i") {
+        url = `https://www.instagram.com/search?q=${encodeURIComponent(afrix)}`;
+        maakHistoriek("instagram", afrix, url);
+    } else if (prefix === "/x") {
+        url = `https://www.x.com/search?q=${encodeURIComponent(afrix)}`;
+        maakHistoriek("x", afrix, url);
     }
 
     if (url) {
         window.open(url, '_blank');
     }
+
+    inputfield.value = "";
 };
 
 const maakHistoriek = (title, suffix, url) => {
