@@ -99,6 +99,7 @@ const createCardAndAppend = (title, commandoSuffix, url, skipSave = false) => {
 
 
 
+
     card.classList.add("d-flex", "flex-column");
     cardBtn.textContent = 'go';
     cardBtn.classList.add("align-self-start");
@@ -120,6 +121,7 @@ const createCardAndAppend = (title, commandoSuffix, url, skipSave = false) => {
     col4.appendChild(card);
     row.appendChild(col4);
 
+    btn.style.color = 'white';
 
 
 };
