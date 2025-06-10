@@ -1,0 +1,31 @@
+.colorDemo {
+	width:100px;
+	height:100px;
+	border:1px solid black;
+}
+
+.slider-row{
+	display: flex;
+	padding: 20px;
+}
+
+label{
+	padding:10px;
+}
+
+.container{
+	display: flex;
+	gap: 30px;
+	align-items: flex-start;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 450px;
+	height: 200px;
+}
+
+.colorDemo{
+	width:80px;
+	height:80px;
+}
+

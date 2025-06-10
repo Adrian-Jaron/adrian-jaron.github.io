@@ -1,6 +1,6 @@
 
-
 let lijstPersonen, voornaam, achternaam, geboortedatum, email, aantalKinderen;
+let personen = [];
 let huidigeIndex = -1;
 
 const setup = () => {
@@ -22,15 +22,10 @@ const setup = () => {
 };
 
 
-let personen = [];
-
-
-
-
 
 const bewaarNieuwePersoon = () => {
     console.log("Klik op de knop bewaar");
-    valideer();
+
 
 
         const nieuwePersoon = {
@@ -40,11 +35,15 @@ const bewaarNieuwePersoon = () => {
             email: email.value,
             childcount: aantalKinderen.value,
         };
+
     if(huidigeIndex === -1) {
         personen.push(nieuwePersoon);
         let option = document.createElement('option');
         option.textContent = `${nieuwePersoon.firstName} ${nieuwePersoon.lastName}`;
         lijstPersonen.appendChild(option);
+
+        huidigeIndex = personen.length - 1;
+        lijstPersonen.selectedIndex = huidigeIndex;
     }
     else{
         personen[huidigeIndex] = nieuwePersoon;
@@ -55,7 +54,9 @@ const bewaarNieuwePersoon = () => {
 const toonGegevens = () => {
     const geselecteerdeIndex = lijstPersonen.selectedIndex;
     const geselecteerdePersoon = personen[geselecteerdeIndex];
+
     huidigeIndex = geselecteerdeIndex;
+
     voornaam.value = geselecteerdePersoon.firstName;
     achternaam.value = geselecteerdePersoon.lastName;
     geboortedatum.value = geselecteerdePersoon.birthdate;
@@ -69,14 +70,13 @@ const bewerkNieuwePersoon = () => {
     console.log("Klik op de knop nieuw");
     let bewaarBtn = document.getElementById("btnBewaar");
 
-    voornaam.value = " ";
+    voornaam.value = "";
     achternaam.value = "";
     geboortedatum.value = "";
     email.value = "";
     aantalKinderen.value = "";
     aantalKinderen.value = "";
 
-    bewaarBtn.addEventListener('click', valideer);
     huidigeIndex = -1;
 };
 

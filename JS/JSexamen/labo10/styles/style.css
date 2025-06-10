@@ -1,0 +1,44 @@
+#submit-button{
+    width: 60vw;
+    background-color: mediumseagreen;
+    color: white;
+    font-weight: bold;
+}
+
+h1, h2{
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.card.google{
+background-color: lightblue; !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.card.youtube{
+background-color: red; !important;
+font-size: 20px;
+    font-weight: bold;
+}
+
+.card.instagram{
+background-color: pink; !important;
+font-size: 20px;
+    font-weight: bold;
+}
+
+.history-list{
+.history-list{
+}
+
+.history-container{
+    width: 60vw;
+}
+
+#history-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    width: 60vw;}}
